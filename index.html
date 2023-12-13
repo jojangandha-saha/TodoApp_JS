@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="icon" href="todo-line.png"
+              type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat&family=Noto+Sans:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;700&family=Space+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <main class="app">
+        <section class="greeting">
+            <h2 class="title">
+                Welcome <input type="text" id="name" placeholder="Name here"/>
+            </h2>
+        </section>
+
+        <section class="create-todo">
+            <h3>CREATE TODO</h3>
+            <form  id="new-todo-form">
+                <h4>What's on the todo list? </h4>
+                <input type="text" name="content" placeholder="eg. Go to grocery shopping"/>
+
+                <h4>Choose Category</h4>
+                <div class="options">
+                    <label >
+                        <input type="radio"
+                         name="category" 
+                        id="category1" 
+                        value="personal"/>
+                        <span class="bubble personal"></span>
+                        <div>Personal</div>
+                    </label>
+
+                    <label >
+                        <input type="radio"
+                         name="category" 
+                        id="category2" 
+                        value=""/>
+                        <span class="bubble work"></span>
+                        <div>Work</div>
+                    </label>
+                </div>
+
+                <input type="submit" value="Add Todo">
+            </form>
+        </section>
+<!-- TODO LIST -->
+        <section class="todo-list">
+            <h3>TODO LIST</h3>
+            <div class="list" id="todo-list">
+                <!-- <div class="todo-item done">
+                    <label>
+                        <input type="checkbox" />
+                        <span class="bubble personal"></span>
+
+                    </label>
+
+                    <div class="todo-content">
+                        <input type="text" value="Study DSA" readonly/>
+                    </div>
+
+                    <div class="actions">
+                        <button class="edit">EDIT</button>
+                        <button class="delete">REMOVE</button>
+                    </div>
+                </div>
+
+                <div class="todo-item">
+                    <label>
+                        <input type="checkbox" />
+                        <span class="bubble personal"></span>
+
+                    </label>
+
+                    <div class="todo-content">
+                        <input type="text" value="Get grocery" readonly/>
+                    </div>
+
+                    <div class="actions">
+                        <button class="edit">EDIT</button>
+                        <button class="delete">REMOVE</button>
+                    </div>
+                </div>
+
+                <div class="todo-item">
+                    <label>
+                        <input type="checkbox" />
+                        <span class="bubble work"></span>
+
+                    </label>
+
+                    <div class="todo-content">
+                        <input type="text" value="Complet Project" readonly/>
+                    </div>
+
+                    <div class="actions">
+                        <button class="edit">EDIT</button>
+                        <button class="delete">REMOVE</button>
+                    </div>
+                 </div> -->
+            </div> 
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
